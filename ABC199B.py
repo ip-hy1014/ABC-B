@@ -6,16 +6,19 @@
 """
 
 n = int(input())
+
 a = list(map(int, input().split()))
 b = list(map(int, input().split()))
 
-res = 0
-for i in range(1, 1001) :
-	ok = True
-	for j in range(n) :
-		if i < a[j] or i > b[j] : ok = False
-	if ok : res += 1
+max_a = max(a)
+min_b = min(b)
 
-print(res)
+if max_a <= min_b:
+    print(min_b - max_a + 1)
+else:
+    print(0)
 
-
+"""
+xの個数は数列Bの最小値から数列Aの最大値を引いた値 + 1．
+それ以外のときは0を出力する．
+"""
