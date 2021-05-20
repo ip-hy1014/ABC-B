@@ -32,23 +32,3 @@ if power <= 0:
   print("No")
 else:
   print("Yes")
-
-N,M,T=map(int,input().split())
-Battery=N
-Jikoku=0
-for i in range(M):
-  A,B=map(int,input().split())
-  Battery-=A-Jikoku
-  if Battery<=0:
-    print('No')
-    exit()
-  else:
-    Battery+=B-A
-    if Battery>N:
-      Battery=N
-    Jikoku=B
-Battery-=T-Jikoku
-if Battery<=0:
-  print('No')
-else:
-  print('Yes')
