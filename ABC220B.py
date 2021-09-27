@@ -1,0 +1,5 @@
+k = int(input())
+a,b = map(str,input().split())
+a_ = int(a,k)
+b_ = int(b,k)
+print(a_*b_)
