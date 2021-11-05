@@ -5,5 +5,5 @@ print(int(ans))
 
 #別解
 n = int(input())
-ans = (n**0.5)**0.5
+ans = n**0.25
 print(ans)
