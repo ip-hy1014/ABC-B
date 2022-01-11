@@ -1,4 +1,10 @@
 a,b,k = map(int,input().split())
+for i in range(a,b+1):
+  if i<a+k or i>b-k:
+    print(i)
+
+# 別解
+a,b,k = map(int,input().split())
 if b-a+1>2*k:
   for i in range(a,a+k):
     print(i)
