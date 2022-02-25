@@ -1,3 +1,6 @@
+print(-1 if input()=="a" else "a")
+
+#別解
 s = input()
 def alpha2num(alpha):
     num=0
