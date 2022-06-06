@@ -10,3 +10,10 @@ for i in a:
     s += i
     c += 1
 print(math.ceil(s/c))
+
+#別解
+n = int(input())
+a = list(map(int,input().split()))
+c = a.count(0)
+s = 0--sum(a)//(n-c) #切り上げ
+print(s)
